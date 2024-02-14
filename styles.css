@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* estilo do menu */
+
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #C1D0B5; */
+    /* background-color: #D2E3C8; */
+    /* background-color: #EED88E; */
+    /* background-color: #D5F0C1; */
+    /* background-color: #86A789; */
+    /* background-color: #E1F0DA; */
+    background-image: url(imagens/5887585.jpg);
+    background-size:cover;
+    
+    width: 100%;
+    height: 100%;
+}
+
+.container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+header{
+    /* background-color: #ffffff; */
+    /* border: 2px solid black; */
+    background-image: url(imagens/pexels-oleksandr-p-1227513.jpg);
+    /* background-repeat: repeat-x; */
+    width: 100%;
+    display: flex;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+#topo-esquerda{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+#topo-esquerda img {
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+#topo-direita {
+    width: 75%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+#topo-direita #span01 {
+    /* color: #5F6F52; */
+    color: #182B2D;
+    font-family: 'Hammersith One', sans-serif;
+}
+
+.contorno{
+    -webkit-text-stroke-width: 2px; 
+    -webkit-text-stroke-color: #D7A44B; 
+}
+
+#topo-direita #span02 {
+    color: #ffffff;
+    font-family: 'Playfair Display', serif;
+}
+
+nav {
+    width: 100%;
+    height: 50px;
+    background-image: url(imagens/5887585.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 5px;
+    margin-top: 5px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style: none;
+}
+nav ul li {
+    padding: 15px 40px;
+}
+
+/* nav ul li:hover {
+    background-color: #ffffff;
+} */
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #D7A44B;
+}
+
+/*estilo pagina ações */
+.content {
+    display: flex; /* Usando flexbox para alinhar os elementos lado a lado */
+    justify-content: center; /* Espaço uniforme entre os elementos */
+    gap: 20px;
+}
+
+.text {
+    text-align: center;
+    justify-content: center;
+    width: 80%; /* Largura da div de texto */
+}
+
+.artigo {
+    width: 20%; /* Largura da div de artigo */
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+img {
+
+    width: 300px;
+    max-width: 100%; /* Para garantir que as imagens se ajustem ao tamanho do contêiner */
+    height: auto; /* Para manter a proporção da imagem */
+}
