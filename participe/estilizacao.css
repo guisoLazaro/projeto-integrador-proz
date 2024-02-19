@@ -10,7 +10,7 @@ body{
     /* background-color: #D5F0C1; */
     /* background-color: #86A789; */
     /* background-color: #E1F0DA; */
-    background-image: url(imagens/5887585.jpg);
+    background-image: url(/img5887585.jpg);
     background-size:cover;
     
     width: 100%;
@@ -86,7 +86,7 @@ nav {
     justify-content: center;
 }
 
-nav ul {
+nav ul { 
     display: flex;
     align-items: center;
     justify-content: space-evenly;
