@@ -1,0 +1,229 @@
+/*97% de armazenamento usado … Se você atingir o limite, não será possível criar, editar ou fazer upload de arquivos. Aproveite 100 GB de armazenamento por R$ 7,99 R$ 1,99 por mês, durante 3 meses.
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hammersmith+One&family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --cor-header: #f18700;
+    --cor-aside: #6cbe99;
+    --cor-titulos: #f9b000;
+    --cor-linksecundario: #95c11f;
+    --fonte-conteudo: 'Segoe UI', Tahoma, sans-serif;
+  } 
+*/
+header {
+  background-color: #f18700;
+  width: 100%;
+  display: flex;
+
+}
+
+header h1 {
+  font-size: 40px;
+  display: flex;
+  margin-left: 100px;
+  margin-right: auto;
+  margin-top: 50px;
+  margin-bottom: auto; 
+}
+
+header img {
+  height: 150px;
+  width: 150px;
+  border: 2px solid #6cbe99;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+header #span01 {
+  color: #125646;
+  font-family: 'Hammersmith One', sans-serif;
+  margin-right: 10px;
+}
+
+header #span02 {
+  color: #f7f0f0;
+  font-family: 'Playfair Display', serif;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+nav {
+    background-color: #f18700 ;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  margin-left: auto;
+  margin-right: 10px;
+  margin-top: auto;
+  margin-bottom: auto; 
+  padding: 6px;
+  
+}
+nav ul li a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f7f0f0;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+
+main {
+  width: 100%;
+  height: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main h2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.retangulo {
+    border-radius: 30px;
+    border: 2px solid black;
+    width: 340px;
+    height: 350px;
+    margin-left:auto;
+    margin-right:auto; 
+    background-color: #6cbe99 ;
+}
+
+.retangulo h2 {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.retangulo label {
+    color: white;
+    margin-left:20px;
+    margin-right:auto; 
+}
+
+.retangulo input {
+    margin-left:20px;
+    margin-right:auto; 
+    border: 1px solid black;
+    border-radius: 4px;
+    
+}
+
+.regra {
+    margin-left:30px;
+    margin-right:auto;
+}
+
+#botao {
+    display: flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+.retangulo-2 {
+    border-radius: 0px;
+}
+
+article {
+  width: 70%;
+  padding: 15px;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+article h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  color: #f9b000;
+}
+
+article p {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #000000;
+  margin-bottom: 15px;
+}
+
+article img {
+  width: 250px;
+  height: 200px;
+  border: 2px solid #ffffff;
+  margin-bottom: 15px;
+  background-color: #f7f0f0;
+}
+
+aside {
+  color: #f7f0f0;
+  width: 25%;
+  padding: 15px;
+  background-color: #6cbe99;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  opacity: 0.8;
+}
+
+aside h2 {
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+aside ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  width: 70%;
+}
+/*
+aside ul li {
+  padding: 10px;
+}
+
+aside ul li a {
+  text-decoration: none;
+  color: #f7f0f0;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+aside ul li a:hover {
+  color: #f18700;
+  text-decoration: underline;
+}
+*/
+footer {
+  width: 100%;
+  height: 8vh;
+  background-color: #ffffff;
+  opacity: 0.6;
+  margin-top: 5px;
+}

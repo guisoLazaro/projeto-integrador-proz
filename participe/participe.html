@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="/participe/estilizacao.css">
+        <link rel="stylesheet" href="lixo.css">
         <link rel="shortcut icon" href="../Projeto Integrador Proz - Home/imagens/ClimateGuardian.png" type="image/x-icon">
 
         <title>ClimateGuardian - Participe</title>
@@ -20,17 +20,17 @@
 
                 <div id="topo-direita">
                     <h1>
-                        <span id="span01" class="contorno">CLIMATEGUARDIAN</span> <span id="span02">Plataform</span>
+                        <span id="span01" class="contorno">CLIMATEGUARDIAN</span> <span id="span02"><em>Plataform</em></span>
                     </h1>
                 </div>
             </header>
 
             <nav>
                 <ul>
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/">Sobre</a></li>
-                    <li><a href="/impactos/impactos.html">Impactos</a></li>
-                    <li><a href="/">Ações</a></li>
+                    <li><a href="/index.html">Home |</a></li>
+                    <li><a href="/">Sobre |</a></li>
+                    <li><a href="/impactos/impactos.html">Impactos |</a></li>
+                    <li><a href="/">Ações |</a></li>
                     <li><a href="/Participe/participe.html">Participe</a></li>
                 </ul>            
             </nav>
@@ -39,13 +39,13 @@
             <main>
                 <article>
                     <!-- TITULO E PARAGRAFO -->
-                <h1><ins>Cadastre-se Agora</ins></h1>
+                <h2><ins>Cadastre-se Agora</ins></h2>
                 <p>
                     Saiba mais sobre o que está acontecendo no mundo e como ele vem mudando nos últimos tempos. Cadastre-se agora e receba essas e muitas outras notícias.
                 </p>
 
                     <!-- FORMULARIO -->
-                <fieldset>
+                <fieldset class="retangulo">
                     <form method="POST" action="cadastro.html" autocomplete="on" >
 
                     <h2><strong>Crie sua conta</strong></h2>
@@ -65,19 +65,19 @@
                         <input type="password" name="senha" id="senha2" required autocomplete="current-password" minlength="8">
                     </p>
 
-                    <p>
+                    <p class="regra">
                         <input type="radio" >Aceito os <a href="">Termos e Serviço</a>
                     </p>
 
-                    <input type="submit" value="Enviar">
+                    <input id="botao" type="submit" value="Enviar">
 
-                    <p>
+                    <p class="regra-2">
                         Já tenho uma <a href="login.html">Conta</a>
                     </p>
                 </fieldset>
 
                     <!-- SEGUNDO TITULO E PARAGRAFO -->
-                <h1><ins>Contribua com doações</ins></h1>
+                <h2><ins>Contribua com doações</ins></h2>
                 <p>
                     Caso se interesse em uma participação mais ativa na causa, confira os links a baixo para enviar uma quantia de  contribuição. Eles vão de instituições de pesquisa focadas em soluções inovadoras até ONGs dedicadas à preservação de ecossistemas cruciais, o quadro permite que os doadores escolham onde direcionar seu apoio de acordo com suas preferências e valores.<br><br>
                     
@@ -89,7 +89,7 @@
                     <!-- ASIDE E LINKS -->
                 <aside>
                     <h2 class="linkes">Links Relacionados</h2>
-                    <fieldset id="container2">
+                    <fieldset class="retangulo-2">
                         <a href="https://doe.greenpeace.org.br/doar/p?appeal=19090&utm_source=google&utm_medium=paid&utm_campaign=institucional&utm_content=pmax&gad_source=1&gclid=CjwKCAiAlcyuBhBnEiwAOGZ2S5AlrMZdRjWB9Ft2mhYV8NyDbF93ecZMj2kPTUkTrUOkGSTeeDnu8hoCXzEQAvD_BwE"><br><br>
                             DOE GREENPEACE
                         </a>
@@ -103,13 +103,13 @@
                         </a>
                     </fieldset><br>
 
-                    <fieldset id="container3">
+                    <fieldset class="retangulo-3">
                         <p>
                             Contate-nos para mais informações ou dúvidas.
                         </p>
                     </fieldset><br>
 
-                    <fieldset id="container4">
+                    <fieldset class="retangulo-4">
                         <label>Email de contato</label><br>
                         <a href="" type="email">climateguardian@gmail.com</a><br><br>
                         <label>Telefone de contato</label><br>
