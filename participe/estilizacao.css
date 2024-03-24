@@ -1,11 +1,15 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Hammersmith+One&family=Roboto:wght@900&display=swap');
-/*
+
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
 
 * {
   margin: 0;
   padding: 0;
+}
+
+body {
+  background-color: #ffffff;
 }
 
 :root {
@@ -15,96 +19,102 @@
     --cor-linksecundario: #95c11f;
     --fonte-conteudo: 'Segoe UI', Tahoma, sans-serif;
   } 
-*/
+
+          /*-----------HEADER------------*/
 header {
   background-color: #f18700;
-  width: 100%;
+  width: 1349px;
   display: flex;
+  height: 21vh;
+  justify-content: center;
+  /*position: fixed;*/
 
 }
 
-header h1 {
-  font-size: 40px;
+#container-header{
+  width: 70%;
+  height: 100%;
   display: flex;
-  margin-left: 130px;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: auto; 
 }
 
-header img {
-  height: 150px;
-  width: 150px;
-  border: 2px solid #6cbe99;
+#logo {
+  width: 15vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo img {
+  height: 120px;
+  width: 120px;
+  border: 2px solid black;
   border-radius: 50%;
-  margin: 10px;
 }
 
-header #span01 {
+#container-nav {
+  width: 75vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#titulo-principal #span01 {
   color: #125646;
   font-family: 'Hammersmith One', sans-serif;
   margin-right: 10px;
+  font-size: 42px;
 }
 
-header #span02 {
+#titulo-principal #span02 {
   color: #f7f0f0;
   font-family: 'Playfair Display', serif;
 }
 
-header nav {
-  display: flex;
-  justify-content: flex-end;
-}
 nav {
-    background-color: #f18700 ;
+  margin-top: 30px;
 }
 
 nav ul {
   display: flex;
   list-style: none;
-  justify-content: flex-end;
-  margin-left: auto;
-  margin-right: 10px;
-  margin-top: auto;
-  margin-bottom: auto; 
-  padding: 6px;
   
 }
-nav ul li a {
-  margin-left: 10px;
+nav ul li {
+  margin: 10px;
+  padding: 0 5px 0 5px;
+  border-right: 0.5px solid white; 
+  border-left: 0.5px solid white;
+ 
+}
+
+nav a {
   text-decoration: none;
-  color: white;
-  font-size: 20px;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: sans-serif;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #f7f0f0;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-}
-
-.container {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}
-
-
+            /*-------------MAIN-------------*/
 main {
-  width: 100%;
+  width: 1339px;
   height: auto;
   padding: 5px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  background-color: #b8eed6 ;
 }
 
 main h2 {
     display: flex;
     justify-content: flex-start;
+    padding-bottom: 10px;
 }
+
+            /*---------------ARTICLE------------------*/
 
 .retangulo {
     border-radius: 30px;
@@ -121,28 +131,25 @@ main h2 {
     display: flex;
     justify-content: center;
     font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 .retangulo label {
     color: white;
     margin-left:29px;
-    margin-right:auto;
-    
-     
-    
+    margin-right:auto; 
 }
 
 .retangulo input {
+  padding: 0px 30px 0px 10px;
     margin-left:29px;
     margin-right:auto; 
     border: 1px solid black;
     border-radius: 4px;
-    width: 250px;
-    height: auto;
+    width: 230px;
+    height: 20px;
     outline: none;
-    
-
-    
 }
 
 .regra input {
@@ -155,6 +162,7 @@ main h2 {
 }
 
 .regra-2 {
+  padding-top: 15px;
     margin-left:90px;
     margin-right:auto; 
 }
@@ -165,47 +173,20 @@ main h2 {
     margin-right:auto;
     border: 1px solid black;
     border-radius: 10px;
-    background-color: #83c9a9;
+    background-color: #b9ecd5;
     outline:#0e4135;
-    width: 55px;
-    height: 23px;
+    width: 60px;
+    height: 25px;
     justify-content: center;
-
+    padding: 0;
 }
-
-
-.retangulo-2 {
-    width: 200px;
-    height: 270px;
-    border:1px solid black;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    
-}
-
-.retangulo-3 p {
-    font-size: 25px;
-    
-}
-
-.retangulo-3 {
-    width: 200px;
-    height: 190px;
-    border:1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 
 article {
   width: 70%;
   padding: 15px;
+  padding-top: 30px;
   background-color: #ffffff;
-  opacity: 1;
+  border-radius: 50px;
 }
 
 article h2 {
@@ -229,52 +210,63 @@ article img {
   background-color: #f7f0f0;
 }
 
-aside {
-  color: #f7f0f0;
-  width: 25%;
-  padding: 15px;
-  background-color: #6cbe99;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
-  opacity: 0.8;
+#article02{
+  padding-top: 20px;
 }
 
-aside h2 {
-  text-align: center;
-  text-transform: uppercase;
-  opacity: 1;
+#article02 h2 {
+  padding-bottom: 10px;
 }
 
-aside ul {
+#participantes{
+  background-color: rgb(199, 248, 255);
+  width: 900px;
+  height: 80px;
+  justify-content: center;
+  border-radius: 15px;
+  margin-left:auto;
+  margin-right:auto;
+  border: 1px solid black;
+}
+
+#participantes h3 {
+  color: #f9b000;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+article ul{
+  display: flex;
+  justify-content: center;
   align-items: center;
+  text-decoration-line:underline;
+
+}
+
+article ul li {
+  padding-left: 30px;
   list-style: none;
-  width: 70%;
-}
-/*
-aside ul li {
-  padding: 10px;
 }
 
-aside ul li a {
-  text-decoration: none;
-  color: #f7f0f0;
-  font-weight: bolder;
-  font-size: 20px;
-}
+        /*----------FOOTER-------------*/
 
-aside ul li a:hover {
-  color: #f18700;
-  text-decoration: underline;
-}
-*/
 footer {
   width: 100%;
-  height: 8vh;
-  background-color: #ffffff;
-  opacity: 0.6;
-  margin-top: 5px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #6cbe99;
+}
+
+#conteudo-footer{
+  width: 80%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #125646;
+  font-size: 20px;
+  font-weight: bold;
 }
