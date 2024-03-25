@@ -5,49 +5,47 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilizacao.css">
+        <link rel="stylesheet" href="/participe/estilizacao.css">
         <link rel="shortcut icon" href="../Projeto Integrador Proz - Home/imagens/ClimateGuardian.png" type="image/x-icon">
 
         <title>ClimateGuardian - Participe</title>
     </head>
     <body>
-        <header>
-            <div id="container-header">
-                <div id="logo">
-                    <a href="#"><img src="../Projeto Integrador Proz - Home/imagens/ClimateGuardian.png" alt="Logo Climate Guardian"></a>
+
+        <div class="container">
+            <header>
+                <div id="topo-esquerda">
+                    <img src="../Projeto Integrador Proz - Home/imagens/ClimateGuardian.png" width= "150" height="150">
                 </div>
 
-                <div id="container-nav">
-                    <div id="titulo-principal">
-                        <h1><span id="span01">ClimateGuardian</span><span id="span02">Plataform</span></h1>
-                    </div>
-
-                    <nav id="menu-navegacao">
-                        <ul>
-                            <li><a href="/index.html" target="#">Home</a></li>
-                            <li><a href="/sobre/" target="#">Sobre</a></li>
-                            <li><a href="/impactos/impactos.html" target="#">Impactos</a></li>
-                            <li><a href="/Ações/acoes.html" target="#">Ações</a></li>
-                            <li><a href="/Participe/participe.html" target="#">Participe</a></li>
-                        </ul>            
-                    </nav>
+                <div id="topo-direita">
+                    <h1>
+                        <span id="span01" class="contorno">CLIMATEGUARDIAN</span> <span id="span02">Plataform</span>
+                    </h1>
                 </div>
-            </div>
-        </header>
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/">Sobre</a></li>
+                    <li><a href="/impactos/impactos.html">Impactos</a></li>
+                    <li><a href="/">Ações</a></li>
+                    <li><a href="/Participe/participe.html">Participe</a></li>
+                </ul>            
+            </nav>
 
                     <!-- MAIN E ARTICLE -->
-        <main>
-            <article>
+            <main>
+                <article>
                     <!-- TITULO E PARAGRAFO -->
-                <h2><ins>Participe Também</ins></h2>
+                <h1><ins>Cadastre-se Agora</ins></h1>
                 <p>
-                    Saiba mais sobre o que está acontecendo no mundo e como ele vem mudando nos últimos tempos. Além de receber notícias e dicas, você pode se envolver com outros membros da comunidade compartilhando suas próprias ideias, experiências e iniciativas para combater o aquecimento global. Juntos, podemos fazer uma grande diferença.
-
-
+                    Saiba mais sobre o que está acontecendo no mundo e como ele vem mudando nos últimos tempos. Cadastre-se agora e receba essas e muitas outras notícias.
                 </p>
 
                     <!-- FORMULARIO -->
-                <fieldset class="retangulo">
+                <fieldset>
                     <form method="POST" action="cadastro.html" autocomplete="on" >
 
                     <h2><strong><ins>Crie sua conta</ins></strong></h2>
@@ -59,16 +57,17 @@
 
                     <p>
                         <label for="email2">Email:</label><br>
-                        <input type="email" name="email" id="email2" required autocomplete="email"> 
+                        <input type="email" name="email" id="email2" required autocomplete="email">
                     </p>
 
                     <p>
                         <label for="senha2">Senha:</label><br>
-                        <input type="password" name="senha" id="senha2" required autocomplete="current-password" minlength="8">
+                        <input type="password" name="senha" id="senha2" required autocomplete="current-password"
+                            minlength="8">
                     </p>
 
-                    <p class="regra">
-                        <input type="checkbox" >Aceito os <a href="">Termos e Serviço</a>
+                    <p>
+                        <input type="radio" >Aceito os <a href="">Termos e Serviço</a>
                     </p>
 
                     <input id="botao" type="submit" value="Criar">
@@ -76,42 +75,59 @@
                     <p class="regra-2">
                         Já tenho uma <a href="#">Conta</a>
                     </p>
-                </fieldset>
+            </fieldset>
 
                     <!-- SEGUNDO TITULO E PARAGRAFO -->
-                <div id="article02">
-                    <h2><ins>Melhor Previr que Remediar</ins></h2>
-                    <p>
-                        O Aquecimento Global é um desafio urgente que exige ação imediata e colaborativa. Ao se cadastrar em nossa plataforma, você está dando um passo importante na direção certa. Receba informações valiosas, aprenda maneiras de reduzir sua pegada de carbono e faça parte de uma comunidade global de defensores do meio ambiente. Junte-se a nós hoje e faça sua parte para um futuro mais sustentável e resiliente para todos.
+                <h1><ins>Contribua com doações</ins></h1>
+                <p>
+                    Caso se interesse em uma participação mais ativa na causa, confira os links a baixo para enviar uma quantia de  contribuição. Eles vão de instituições de pesquisa focadas em soluções inovadoras até ONGs dedicadas à preservação de ecossistemas cruciais, o quadro permite que os doadores escolham onde direcionar seu apoio de acordo com suas preferências e valores.<br><br>
+                    
+                    Por meio dessas ações, os apoiadores têm a oportunidade de fazer parte da luta contra as mudanças climáticas, promovendo a adoção de práticas sustentáveis
+                    e impulsionando ações concretas para proteger nosso planeta.
+                </p>
+                </article>
 
+                    <!-- ASIDE E LINKS -->
+                <aside>
+                    <h2 class="linkes">Links Relacionados</h2>
+                    <fieldset id="container2">
+                        <a href="https://doe.greenpeace.org.br/doar/p?appeal=19090&utm_source=google&utm_medium=paid&utm_campaign=institucional&utm_content=pmax&gad_source=1&gclid=CjwKCAiAlcyuBhBnEiwAOGZ2S5AlrMZdRjWB9Ft2mhYV8NyDbF93ecZMj2kPTUkTrUOkGSTeeDnu8hoCXzEQAvD_BwE"><br><br>
+                            DOE GREENPEACE
+                        </a>
 
-                    </p>
-                </div>
-            <div id="participantes">
-                <h3><ins>Participantes:</ins></h3>
-                <ul>
-                    <li>Gustavo</li>
-                    <li>Henrique</li>
-                    <li>Alberto</li>
-                    <li>Alexandre</li>
-                    <li>Gabriel</li>
-                </ul>
-                
-            </div>
-            </article>
-        </main>
+                        <a href="https://www.wwf.org.br/participe/comoapoiar/#:~:text=Gra%C3%A7as%20%C3%A0s%20doa%C3%A7%C3%B5es%2C%20conseguimos%20atuar,%C3%A1gua%20da%20chuva%2C%20beneficiando%20mais"><br><br>
+                            WWF BRASIL
+                        </a>
+
+                        <a href="https://www.coopercarbono.com/doacao/"><br><br>
+                            COOPERCARBONO DOAÇÕES
+                        </a>
+                    </fieldset><br>
+
+                    <fieldset id="container3">
+                        <p>
+                            Contate-nos para mais informações ou dúvidas.
+                        </p>
+                    </fieldset><br>
+
+                    <fieldset id="container4">
+                        <label>Email de contato</label><br>
+                        <a href="" type="email">climateguardian@gmail.com</a><br><br>
+                        <label>Telefone de contato</label><br>
+                        <a href="">+55 (31) 91564 - 0947</a>
+                    </fieldset>
+                </aside>
+            </main>
                     <!-- FOOTER -->
-        <footer>
-            <p>
-                Nos contate também pelas redes sociais      
-            </p>
+            <footer>
+                <p>
+                    Nos contate também pelas redes sociais      
+                </p>
+                <img src="#" alt="Logo GitHub" width="70" height="70">
+                <img src="#" alt="Logo Instagram" width="75" height="75">
+                <img src="#" alt="Logo Twitter/X" width="50" height="50">
 
-            <ul>
-                <a href="#"><img src="#" alt="Logo GitHub" width="70" height="70"></a>
-                <a href="#"><img src="#" alt="Logo Instagram" width="75" height="75"></a>
-                <a href="#"><img src="#" alt="Logo Twitter/X" width="50" height="50"></a>
-            </ul>
-
-        </footer>
+            </footer>
+        </div>
     </body>
 </html>
