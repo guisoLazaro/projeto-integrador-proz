@@ -107,7 +107,7 @@ nav a {
 
 main {
   width: 80%;
-  height: 120vh;
+  height: 150vh;
   margin: 10px auto;
   display: flex;
 }
@@ -130,7 +130,8 @@ section h2{
 .texto-main{
   font-family: 'Segoe UI', Tahoma, sans-serif;
   padding: 10px;
-  height: 30vh;
+  height: 40vh;
+  margin-top: 10px;
 }
 
 .texto-main p {
@@ -252,13 +253,14 @@ input {
 }
 
 aside {
-  height: 25%;
+  height: 35%;
   padding: 20px;
   background-color:  #6CBE99;
   position: fixed;
   text-align: center;
   font-family: sans-serif;
   border-radius: 10px;
+  margin-top: 30px;
 }
 
 aside h2 {
