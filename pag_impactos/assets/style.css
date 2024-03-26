@@ -26,7 +26,6 @@
     align-items: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
     border-radius: 15px;
-    padding: 10px;
   }
 
   aside ul {
@@ -42,7 +41,11 @@
     text-align: center;
     max-width: 200px;
   }
+  footer #retornar-inicio {
+    display: none;
+  }
 }
+
 body {
   background-color: #f7f0f0;
   background-size: cover;
@@ -287,7 +290,7 @@ footer {
   width: 2.2rem;
   border-radius: 50%;
   transition: all 0.4s;
-  padding-right: 5px;
+  padding: 0px 5px 0px 5px;
 }
 
 #conteudo-footer a:hover {
