@@ -7,7 +7,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="estilizacao.css">
         <link rel="shortcut icon" href="../Projeto Integrador Proz - Home/imagens/ClimateGuardian.png" type="image/x-icon">
-
         <title>ClimateGuardian - Participe</title>
     </head>
     <body>
@@ -48,34 +47,35 @@
 
                     <!-- FORMULARIO -->
                 <fieldset class="retangulo">
-                    <form method="POST" action="cadastro.html" autocomplete="on" >
+                    <form id="form" method="POST" action="cadastro.html" autocomplete="on" >
 
                     <h2><strong><ins>Crie sua conta</ins></strong></h2>
 
-                    <p>
+                    <div>
                         <label for="nome2">Nome:</label><br>
                         <input type="text" name="nome" id="nome2" required autocomplete="username" minlength="3">
-                    </p>
+                    </div>
 
-                    <p>
+                    <div>
                         <label for="email2">Email:</label><br>
                         <input type="email" name="email" id="email2" required autocomplete="email"> 
-                    </p>
-
-                    <p>
+                    </div>
+                    
+                    <div>
                         <label for="senha2">Senha:</label><br>
                         <input type="password" name="senha" id="senha2" required autocomplete="current-password" minlength="8">
-                    </p>
+                        <div id="olho" onclick="revelar()"></div>
+                    </div>         
 
-                    <p class="regra">
+                    <div class="regra">
                         <input type="checkbox" >Aceito os <a href="">Termos e Serviço</a>
-                    </p>
+                    </div>
 
                     <input id="botao" type="submit" value="Criar">
 
-                    <p class="regra-2">
+                    <div class="regra-2">
                         Já tenho uma <a href="#">Conta</a>
-                    </p>
+                    </div>
                 </fieldset>
 
                     <!-- SEGUNDO TITULO E PARAGRAFO -->
@@ -114,4 +114,6 @@
 
         </footer>
     </body>
+    <script src="script.js" ></script>
+
 </html>

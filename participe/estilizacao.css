@@ -109,9 +109,9 @@ main {
 }
 
 main h2 {
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 10px;
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 10px;
 }
 
             /*---------------ARTICLE------------------*/
@@ -142,15 +142,33 @@ main h2 {
 }
 
 .retangulo input {
-  padding: 0px 30px 0px 10px;
+    padding: 0px 5px 0px 10px;
     margin-left:29px;
     margin-right:auto; 
     border: 1px solid black;
     border-radius: 4px;
-    width: 230px;
+    width: 255px;
     height: 20px;
     outline: none;
 }
+
+
+/*#olho{
+  top: 50%;
+  position: absolute;
+  margin: 162px auto auto 273px;
+  background: url(olho-aberto.png);
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+#olho.olho-fechado{
+  background: url(olho-fechado.png);
+  background-size: cover;
+}
+*/
 
 .regra input {
     width: auto;
@@ -194,6 +212,12 @@ article h2 {
   text-transform: uppercase;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
   color: #f9b000;
+}
+
+article div {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  color: #000000;
+  margin-bottom: 15px;
 }
 
 article p {
