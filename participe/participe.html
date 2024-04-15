@@ -37,6 +37,8 @@
                     <!-- MAIN E ARTICLE -->
         <main>
             <article>
+                
+                
                     <!-- TITULO E PARAGRAFO -->
                 <h2><ins>Participe Também</ins></h2>
                 <p>
@@ -47,35 +49,40 @@
 
                     <!-- FORMULARIO -->
                 <fieldset class="retangulo">
-                    <form id="form" method="POST" action="cadastro.html" autocomplete="on" >
+                    <form id="form" method="POST" action="cadastro.html" submit autocomplete="off" >
 
-                    <h2><strong><ins>Crie sua conta</ins></strong></h2>
+                        <h2><strong><ins>Crie sua conta</ins></strong></h2>
 
-                    <div>
-                        <label for="nome2">Nome:</label><br>
-                        <input type="text" name="nome" id="nome2" required autocomplete="username" minlength="3">
-                    </div>
+                        <div>
+                            <label for="nome2">Nome:</label><br>
+                            <input type="text" class="inputs required" oninput="nameValidate()">
+                            <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                        </div>
 
-                    <div>
-                        <label for="email2">Email:</label><br>
-                        <input type="email" name="email" id="email2" required autocomplete="email"> 
-                    </div>
-                    
-                    <div>
-                        <label for="senha2">Senha:</label><br>
-                        <input type="password" name="senha" id="senha2" required autocomplete="current-password" minlength="8">
-                        <div id="olho" onclick="revelar()"></div>
-                    </div>         
+                        <div>
+                            <label for="email2">Email:</label><br>
+                            <input type="email" class="inputs required" oninput="emailValidate()">
+                            <span class="span-required">Digite um email válido</span>
+                        </div>
+                        
+                        
+                        <div>
+                            <label for="senha2">Senha:</label><br>
+                            <input type="password" class="inputs required" id="senha2" oninput="mainPasswordValidate()">
+                            <div id="olho" onclick="revelar()"></div>
+                            <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
+                        </div>         
 
-                    <div class="regra">
-                        <input type="checkbox" >Aceito os <a href="">Termos e Serviço</a>
-                    </div>
+                        <div class="regra">
+                            <input type="checkbox" class="inputs required" required >Aceito os <a href="">Termos e Serviço</a>
+                        </div>
 
-                    <input id="botao" type="submit" value="Criar">
+                        <input id="botao" type="submit" value="Criar">
 
-                    <div class="regra-2">
-                        Já tenho uma <a href="#">Conta</a>
-                    </div>
+                        <div class="regra-2">
+                            Já tenho uma <a href="#">Conta</a>
+                        </div>
+                    </form>
                 </fieldset>
 
                     <!-- SEGUNDO TITULO E PARAGRAFO -->
@@ -102,18 +109,102 @@
         </main>
                     <!-- FOOTER -->
         <footer>
-            <p>
-                ClimateGuardian © - Equipe 02     
-            </p>
-
-            <ul>
-                <a href="#"><img src="../Ações/img/logo_Github.png" id="img-git" alt="Logo GitHub" width="68" height="68"></a>
-                <a href="#"><img src="../Ações/img/logo_Instagram.png" id="img-insta" alt="Logo Instagram" width="77" height="77"></a>
-                <a href="#"><img src="../Ações/img/logo_X.png" id="img-x" alt="Logo Twitter/X" width="50" height="50"></a>
-            </ul>
-
-        </footer>
+            <div id="conteudo-footer">
+                <div id="footer-titulo">
+                    <h3>ClimateGuardian &copy; - Equipe 02</h3>
+                </div>
+    
+                <ul id="footer-lista">
+                    <li><a href="#"><img src="github (1).png" alt="" class="icones" target="_blank"></a></li>
+                    <li><a href="https://inscricao.prozeducacao.com.br/home-2024/" target="_blank"><img src="proz1.png" alt="" width="" class="icones" ></a></li>
+                    <li><a href="home.html"><img src="ClimateGuardian.png" alt="" class="icones" target="_blank"></a></li>
+                </ul>
+            </div>
+    
+                <div id="retonar-inicio">
+                    <a href="#logo"><img src="seta-para-cima (1).png" alt="" title="Início" width="50px" height="50px"></a>
+                </div>
+        </footer> 
     </body>
-    <script src="script.js" ></script>
+    <script>
 
+
+        //Função revelar
+
+const senha = document.getElementById('senha2');
+const olho = document.getElementById('olho');
+let nomePessoa = document.getElementById('nomePessoa')
+
+function revelar(){
+    if(senha.type === 'password'){
+        senha.setAttribute('type', 'text');
+        olho.classList.add('hide')
+    } else{
+        senha.setAttribute('type', 'password');
+        olho.classList.remove('hide')
+    }
+
+}
+
+//Validação de Formulario
+
+const form   = document.getElementById('form');
+const campos = document.querySelectorAll('.required');
+const spans  = document.querySelectorAll('.span-required');
+const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+
+form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    nameValidate();
+    emailValidate();
+    mainPasswordValidate();
+});
+
+function setError(index){ 
+    campos[index].style.border = '2px solid #e63636';
+    spans[index].style.display = 'block';
+
+}
+
+function removeError(index){
+    campos[index].style.border = '';
+    spans[index].style.display = 'none';
+
+}
+
+function nameValidate(){
+    if(campos[0].value.length < 3)
+    {
+        setError(0);
+    }
+    else
+    {
+        removeError(0);
+    }
+}
+
+function emailValidate(){
+    if(!emailRegex.test(campos[1].value))
+    {
+        setError(1);
+    }
+    else
+    {
+        removeError(1);
+    }
+}
+
+function mainPasswordValidate(){
+    if(campos[2].value.length < 8)
+    {
+        setError(2);
+    }
+    else
+    {
+        removeError(2)
+    }
+}
+
+
+    </script> 
 </html>
