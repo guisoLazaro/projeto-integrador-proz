@@ -319,6 +319,7 @@ iframe {
   max-width: 800px;
   margin: 10px 0;
   padding: 5px;
+  word-wrap: break-word;
 }
 
 textarea {
@@ -354,10 +355,12 @@ button:hover {
 }
 
 .nomeComentario {
+  max-width: 800px;
   margin-top: 10px;
   margin-bottom: 0;
   font-weight: 500;
 }
+
 @media screen and (max-width:800px) {
   footer {
     flex-direction: column;
