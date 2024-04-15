@@ -13,7 +13,7 @@
         <header>
             <div id="container-header">
                 <div id="logo">
-                    <a href="#"><img src="../Projeto Integrador Proz - Home/imagens/ClimateGuardian.png" alt="Logo Climate Guardian"></a>
+                    <a href="#"><img src="./img-participe/ClimateGuardian.png" alt="Logo Climate Guardian"></a>
                 </div>
 
                 <div id="container-nav">
@@ -43,8 +43,6 @@
                 <h2><ins>Participe Também</ins></h2>
                 <p>
                     Saiba mais sobre o que está acontecendo no mundo e como ele vem mudando nos últimos tempos. Além de receber notícias e dicas, você pode se envolver com outros membros da comunidade compartilhando suas próprias ideias, experiências e iniciativas para combater o aquecimento global. Juntos, podemos fazer uma grande diferença.
-
-
                 </p>
 
                     <!-- FORMULARIO -->
@@ -55,20 +53,20 @@
 
                         <div>
                             <label for="nome2">Nome:</label><br>
-                            <input type="text" class="inputs required" oninput="nameValidate()">
+                            <input type="text" class="inputs required" oninput="nomeValidacao()">
                             <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
                         </div>
 
                         <div>
                             <label for="email2">Email:</label><br>
-                            <input type="email" class="inputs required" oninput="emailValidate()">
+                            <input type="email" class="inputs required" oninput="emailValidacao()">
                             <span class="span-required">Digite um email válido</span>
                         </div>
                         
                         
                         <div>
                             <label for="senha2">Senha:</label><br>
-                            <input type="password" class="inputs required" id="senha2" oninput="mainPasswordValidate()">
+                            <input type="password" class="inputs required" id="senha2" oninput="validacaoSenha()">
                             <div id="olho" onclick="revelar()"></div>
                             <span class="span-required">Digite uma senha com no mínimo 8 caracteres</span>
                         </div>         
@@ -85,26 +83,26 @@
                     </form>
                 </fieldset>
 
-                    <!-- SEGUNDO TITULO E PARAGRAFO -->
-                <div id="article02">
-                    <h2><ins>Melhor Previr que Remediar</ins></h2>
-                    <p>
-                        O Aquecimento Global é um desafio urgente que exige ação imediata e colaborativa. Ao se cadastrar em nossa plataforma, você está dando um passo importante na direção certa. Receba informações valiosas, aprenda maneiras de reduzir sua pegada de carbono e faça parte de uma comunidade global de defensores do meio ambiente. Junte-se a nós hoje e faça sua parte para um futuro mais sustentável e resiliente para todos.
+                        <!-- SEGUNDO TITULO E PARAGRAFO -->
+                    <div id="article02">
+                        <h2><ins>Melhor Previr que Remediar</ins></h2>
+                        <p>
+                            O Aquecimento Global é um desafio urgente que exige ação imediata e colaborativa. Ao se cadastrar em nossa plataforma, você está dando um passo importante na direção certa. Receba informações valiosas, aprenda maneiras de reduzir sua pegada de carbono e faça parte de uma comunidade global de defensores do meio ambiente. Junte-se a nós hoje e faça sua parte para um futuro mais sustentável e resiliente para todos.
 
 
-                    </p>
+                        </p>
+                    </div>
+                <div id="participantes">
+                    <h3><ins>Participantes:</ins></h3>
+                    <ul>
+                        <li>Gustavo</li>
+                        <li>Henrique</li>
+                        <li>Alberto</li>
+                        <li>Alexandre</li>
+                        <li>Gabriel</li>
+                    </ul>
+                    
                 </div>
-            <div id="participantes">
-                <h3><ins>Participantes:</ins></h3>
-                <ul>
-                    <li>Gustavo</li>
-                    <li>Henrique</li>
-                    <li>Alberto</li>
-                    <li>Alexandre</li>
-                    <li>Gabriel</li>
-                </ul>
-                
-            </div>
             </article>
         </main>
                     <!-- FOOTER -->
@@ -115,18 +113,18 @@
                 </div>
     
                 <ul id="footer-lista">
-                    <li><a href="#"><img src="github (1).png" alt="" class="icones" target="_blank"></a></li>
-                    <li><a href="https://inscricao.prozeducacao.com.br/home-2024/" target="_blank"><img src="proz1.png" alt="" width="" class="icones" ></a></li>
-                    <li><a href="home.html"><img src="ClimateGuardian.png" alt="" class="icones" target="_blank"></a></li>
+                    <li><a href="#"><img src="./img-participe/github (1).png" alt="" class="icones" target="_blank"></a></li>
+                    <li><a href="https://inscricao.prozeducacao.com.br/home-2024/" target="_blank"><img src="./img-participe/proz1.png" alt="" width="" class="icones" ></a></li>
+                    <li><a href="home.html"><img src="./img-participe/ClimateGuardian.png" alt="" class="icones" target="_blank"></a></li>
                 </ul>
             </div>
     
                 <div id="retonar-inicio">
-                    <a href="#logo"><img src="seta-para-cima (1).png" alt="" title="Início" width="50px" height="50px"></a>
+                    <a href="#logo"><img src="./img-participe/seta-para-cima (1).png" alt="" title="Início" width="50px" height="50px"></a>
                 </div>
         </footer> 
     </body>
-    <script>
+    <script defer>
 
 
         //Função revelar
@@ -155,53 +153,53 @@ const emailRegex = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
 
 form.addEventListener('submit', (event) => {
     event.preventDefault();
-    nameValidate();
-    emailValidate();
-    mainPasswordValidate();
+    nomeValidacao();
+    emailValidacao();
+    validacaoSenha();
 });
 
-function setError(index){ 
+function erro(index){ 
     campos[index].style.border = '2px solid #e63636';
     spans[index].style.display = 'block';
 
 }
 
-function removeError(index){
+function removerErro(index){
     campos[index].style.border = '';
     spans[index].style.display = 'none';
 
 }
 
-function nameValidate(){
+function nomeValidacao(){
     if(campos[0].value.length < 3)
     {
-        setError(0);
+        erro(0);
     }
     else
     {
-        removeError(0);
+        removerErro(0);
     }
 }
 
-function emailValidate(){
+function emailValidacao(){
     if(!emailRegex.test(campos[1].value))
     {
-        setError(1);
+        erro(1);
     }
     else
     {
-        removeError(1);
+        removerErro(1);
     }
 }
 
-function mainPasswordValidate(){
+function validacaoSenha(){
     if(campos[2].value.length < 8)
     {
-        setError(2);
+        erro(2);
     }
     else
     {
-        removeError(2)
+        removerErro(2)
     }
 }
 
