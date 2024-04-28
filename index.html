@@ -28,23 +28,20 @@
                
                     <nav id="menu-navegacao">
                         <ul>
-                            <li><a href="./index.html">Home</a></li>
-                            <li><a href="./sobre.html">Sobre</a></li>
-                            <li><a href="./impactos.html">Impactos</a></li>
-                            <li><a href="./acoes.html">Ações</a></li>
-                            <li><a href="./participe.html">Participe</a></li>
+                            <li><a href="./index.html" target="">Home</a></li>
+                            <li><a href="./sobre.html" target="">Sobre</a></li>
+                            <li><a href="./impactos.html" target="">Impactos</a></li>
+                            <li><a href="./acoes.html" target="">Ações</a></li>
+                            <li><a href="./participe.html" target="">Participe</a></li>
                         </ul>
                     </nav>
 
-
                     <div id="usuario-logado">
-
 
                     </div>
                 </div>
             </div>
         </header>
-
 
         <main>
             <div id="conteudo-principal">
@@ -54,43 +51,35 @@
                         <p>Na <span>ClimateGuardian Platform</span> nossa missão é fornecer uma plataforma abrangente e acessível para conscientização, educação e ação contra os perigos do aquecimento global. Nosso objetivo é capacitar indivíduos, comunidades e organizações a compreenderem os impactos das mudanças climáticas, adotarem práticas sustentáveis e colaborarem em iniciativas significativas para mitigar os efeitos adversos no meio ambiente e na sociedade. Através de recursos educacionais, ferramentas interativas e conexões com a comunidade global, buscamos inspirar e capacitar os guardiões da Terra a atuarem como agentes de mudança, protegendo e preservando nosso planeta para as gerações presentes e futuras.</p>
                     </div>
 
-
                     <div class="texto-main">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto minima, ullam magnam dolorem consequuntur rerum vero nihil quos aut ipsum, corrupti quod in facilis temporibus dolore amet porro deserunt! Nisi.</p>
-
-
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, voluptas architecto! Distinctio expedita ut excepturi, quaerat nisi fugiat laboriosam consequatur incidunt nam beatae laudantium maxime! Corrupti a adipisci eaque ea!</p>
+                        <p>Na ClimateGuardian Platform, estamos dedicados a um propósito maior do que nós mesmos. Nossa missão é clara e apaixonante: fornecer uma plataforma abrangente e acessível para conscientização, educação e ação contra os perigos do aquecimento global. Em um mundo onde as mudanças climáticas representam uma ameaça cada vez mais urgente, estamos comprometidos em capacitar indivíduos, comunidades e organizações a enfrentarem essa crise de frente.</p>
+                        <p>Através de recursos educacionais robustos, ferramentas interativas e uma conexão vibrante com a comunidade global, buscamos inspirar e capacitar os guardiões da Terra a se tornarem agentes de mudança positiva. Nosso objetivo é claro: proteger e preservar nosso planeta para as gerações presentes e futuras. Junte-se a nós nessa jornada vital, onde cada ação conta, cada voz é ouvida e cada passo nos leva em direção a um futuro mais sustentável e vibrante para todos.</p>
                     </div>
                 </section>
 
-
                 <section class="slider">
-
-
                     <div class="slides">
-
-
                         <input type="radio" name="radio-btn" id="radio1">
                         <input type="radio" name="radio-btn" id="radio2">
                         <input type="radio" name="radio-btn" id="radio3">
                         <input type="radio" name="radio-btn" id="radio4">
                    
                         <div class="slide first">
-                            <img src="imagens/planetab.jpg" alt="There is no Planet B">
+                            <img src="./images/planetab.jpg" alt="There is no Planet B">
                         </div>
 
 
                         <div class="slide">
-                            <img src="imagens/poluicao.jpg" alt="Chaminé poluindo">
+                            <img src="./images/poluicao.jpg" alt="Chaminé poluindo">
                         </div>
 
 
                         <div class="slide">
-                            <img src="imagens/terraseca.jpg" alt="Terra ressecada">
+                            <img src="./images/terraseca.jpg" alt="Terra ressecada">
                         </div>
                        
                         <div class="slide">
-                            <img src="imagens/geleira.jpg" alt="Geleria derretendo">
+                            <img src="./images/geleira.jpg" alt="Geleria derretendo">
                         </div>
 
 
@@ -129,39 +118,80 @@
                                 <li><a href="https://www.greenpeace.org/brasil/" target="_blank">Página Oficial Greenpeace Brasil</a></li>
                                 <li><a href="https://www.ipcc.ch/" target="_blank">Painel Intergovernamental Sobre Mudanças Climáticas</a></li>
                                 <li><a href="https://www.climaterealityproject.org/" target="_blank">Projeto Realidade Climática</a></li>
-                                <li><a href="https://www.coalizaobr.com.br/" target="_blank">Coalizão Brasil Clima, Florestas e Agricultura</a></li>
                             </ul>
                         </div>
                     </div>
                 </aside>
 
 
-                <div id="formulario">
+                <div id="formulario" >
                        
-                    <div id="titulo-formulario">
-                        <h2>Login</h2>
-                    </div>
-                       
-                    <form action="">
-                        <div>
-                            <label for="email">E-mail</label>
-                            <input type="email" name="email" id="email" placeholder="digite seu e-mail">
+                    <form action="" id="login">
+                        
+                        <h2 id="titulo-formulario">Login</h2>
+                        
+                        <div id="formulario-login">
+                            <div>
+                                <label for="email">E-mail</label>
+                                <input type="email" name="email" id="email" placeholder="digite seu e-mail">
+                            </div>
+                            <div>
+                                <label for="senha">Senha</label>
+                                <input type="password" name="senha" id="senha" placeholder="digite sua senha">
+                            </div>
+                            <div>
+                                <input type="submit" id="btn-login" name="Login" value="Login"></input>
+                            </div>
+                            <div id="criar-conta">
+                                <p>Não possui conta? <a id="abrir-criar-conta" href>Clique aqui</a></p>
+                            </div>
                         </div>
-                        <div>
-                            <label for="senha">Senha</label>
-                            <input type="password" name="senha" id="senha" placeholder="digite sua senha">
-                        </div>
-                        <div>
-                            <input type="submit" id="btn-login" name="Login" value="Login"></input>
+
+                    </form>
+
+                    <form action="" id="cadastrar-usuario" class="esconder">
+                        <div id="cadastrar-novo-usuario">
+
+                            <h2>Cadastrar Usuário</h2>
+
+                            <div class="container-inputs">
+                                <label for="nome-cadastro">Nome</label>
+                                <input type="text" id="nome-cadastro" 
+                                name="nome-cadastro" placeholder="Digite seu nome">
+                            </div>
+                            
+                            <div class="container-inputs">
+                                <label for="email-cadastro">Email</label>
+                                <input type="email" id="email-cadastro" name="email-cadastro" placeholder="Digite o seu e-mail">
+                            </div>
+
+                            <div class="container-inputs">
+                                <label for="idade-cadastro">Idade</label>
+                                <input type="number" id="idade-cadastro" name="idade-cadastro" placeholder="Digite a sua idade">
+                            </div>
+
+                            <div class="container-inputs">
+                                <label for="senha-cadastro">Senha</label>
+                                <input type="password" id="senha-cadastro" name="senha-cadastro" placeholder="Digite a sua senha">
+                            </div>
+
+                            <div class="container-inputs">
+                                <label for="confirmar-senha">Senha</label>
+                                <input type="password" id="confirmar-senha" name="confirmar-senha" placeholder="Confirme a sua senha">
+
+                            </div>
+
+                            <div>
+                                <button id="cadastrar">Cadastrar</button>
+                            </div>
+
+                            <p>Voltar para <a href="#" id="retornar-para-login">Login</a></p>
                         </div>
                     </form>
+                    
                 </div>
-
-
-                <div id="carrossel"></div>  
             </div>          
         </main>
-
 
         <footer>
             <div id="conteudo-footer">
@@ -171,18 +201,15 @@
 
 
                 <ul id="footer-lista">
-                    <li><a href="#"><img src="imagens/github (1).png" alt="" class="icones" target="_blank"></a></li>
-                    <li><a href="https://inscricao.prozeducacao.com.br/home-2024/" target="_blank"><img src="imagens/proz1.png" alt="" width="" class="icones" ></a></li>
-                    <li><a href="home.html"><img src="imagens/ClimateGuardian.png" alt="" class="icones" target="_blank"></a></li>
+                    <li><a href="#"><img src="./images/github (1).png" alt="" class="icones" target="_blank"></a></li>
+                    <li><a href="https://inscricao.prozeducacao.com.br/home-2024/" target="_blank"><img src="./images/proz1.png" alt="" width="" class="icones" ></a></li>
+                    <li><a href="./index.html"><img src="./images/ClimateGuardian.png" alt="" class="icones" target="_blank"></a></li>
                 </ul>
             </div>
 
-
-                <div id="retonar-inicio">
-                    <a href="#logo"><img src="imagens/seta-para-cima (1).png" alt="" title="Início" width="50px" height="50px"></a>
-                </div>
+            <div id="retonar-inicio">
+                <a href="#logo"><img src="./images/seta-para-cima (1).png" alt="" title="Início" width="50px" height="50px"></a>
+            </div>
         </footer>
     </body>
-
-
 </html>

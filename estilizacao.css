@@ -28,7 +28,6 @@ header {
   height: 21vh;
   justify-content: center;
   /*position: fixed;*/
-
 }
 
 #container-header{
@@ -74,6 +73,8 @@ header {
   font-family: 'Playfair Display', serif;
 }
 
+          /*---------------NAVEGAÇÃO---------------*/
+
 nav {
   margin-top: 30px;
 }
@@ -117,6 +118,7 @@ main h2 {
 
             /*---------------ARTICLE------------------*/
 
+            /*-------------FORMULARIO ------------*/
 .retangulo {
     border-radius: 30px;
     border: 1px solid black;
@@ -163,7 +165,7 @@ main h2 {
   margin-right: auto;
   margin-top: -23px;
   margin-bottom: auto;
-  background: url("./olho-aberto.png");
+  background: url("./img-participe/olho-aberto.png");
   background-size: cover;
   height: 25px;
   width: 25px;
@@ -171,7 +173,7 @@ main h2 {
 }
 
 #olho.hide{
-  background: url("./olho-fechado.png");
+  background: url("./img-participe/olho-fechado.png");
   background-size: cover;
   margin-right: auto;
   margin-top: -22px;
@@ -188,8 +190,6 @@ main h2 {
   position:absolute;
   width: 300px;
 }
-
-
 
 .regra input {
     width: auto;
@@ -221,6 +221,7 @@ main h2 {
     height: 25px;
     justify-content: center;
     padding: 0;
+    cursor: pointer;
 }
 
 article {
@@ -250,14 +251,7 @@ article p {
   margin-bottom: 15px;
 }
 
-article img {
-  width: 250px;
-  height: 200px;
-  border: 2px solid #ffffff;
-  margin-bottom: 15px;
-  background-color: #f7f0f0;
-}
-
+            /*--------------SEGUNDO TITULO E PARAGRAFO -------------*/
 #article02{
   padding-top: 20px;
 }
@@ -266,6 +260,7 @@ article img {
   padding-bottom: 10px;
 }
 
+            /*--------------PARTICIPANTES-------------*/
 #participantes{
   background-color: rgb(199, 248, 255);
   width: 900px;
@@ -300,7 +295,7 @@ article ul li {
         /*----------FOOTER-------------*/
 
   footer{
-    width: 1339px;
+    width: 100%;
     height: 10vh;
     display: flex;
     align-items: center;
